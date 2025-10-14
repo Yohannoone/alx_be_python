@@ -1,4 +1,3 @@
-
 def display_menu():
     print("Shopping List Manager")
     print("1. Add Item")
@@ -14,12 +13,12 @@ def main():
 
         if choice == '1':
             # Prompt for and add an item
-            item = input("Enter item to add: ")
+            item = input("Enter the item to add: ")
             shopping_list.append(item)
 
         elif choice == '2':
             # Prompt for and remove an item
-            item = input("Enter item to remove: ")
+            item = input("Enter the item to remove: ")
             if item in shopping_list:
                 shopping_list.remove(item)
             else:
@@ -39,5 +38,4 @@ def main():
 
 if __name__ == "__main__":
     main()
-
 
